@@ -4,23 +4,24 @@
 --
 --Mod by Dark Spark. Second mod (first that works)"
 
-
+--Chlog:
+--v0.01: created with 6 nations out of 9(?)
+--v0.02: version +0.01, removed corrupted characters, added two addons, new banner, domreq version increased to current version (5.57), file reordering
 --====MOD INFO ====
 
-#modname "Lands of the Independents (v0.01)"
+#modname "Lands of the Independents (v0.02)"
 #description "This mod adds some nations created with generic units to represent independents. In current version the main new mechanic is CRINGE, because balance created with basic pasting generic units into nations is going into nowhere. 
 In this mod you can play stealthy, because you are very similar to independents in many ways. You can infiltrate, spam your units and spread chaos among the players. Due to the weak nature of units you can not only spam them, but create a overpowered pretender, as some sort of compensation.
 ======
-Mod by Dark Spark. 2020-2021
+Mod by Dark Spark. 2020-2022
 ======
 Compatibility uses:
 monsters 3500-3509
 nations 130-136 "
 
-#version 0.01
---as a pirated versione of domms available on PC
-#domversion 5.36
-#icon "indep_factions_data/banner_001.tga"
+#version 0.02
+#domversion 5.57
+#icon "indep_factions_data/banner_002.tga"
 
 
 
@@ -34,13 +35,13 @@ nations 130-136 "
 #att 0
 #def 0
 #len 0
-#sample "indep_factions_data/taa.sw"
+#sample "indep_factions_data/Sound/taa.sw"
 #blunt
 #end
 #newweapon 1361
 #copyweapon 1360
 #name "Pravaya"
-#sample "indep_factions_data/shaa.sw"
+#sample "indep_factions_data/Sound/shaa.sw"
 #end
 --armors================================================================ARMORS
 #newarmor 365
@@ -58,7 +59,7 @@ nations 130-136 "
 #enc 0
 #end
 --units==================================================================UNITS, MONSTERS, PRETENDERS
---create a Idea of Freedom pretender (id 3500). Эфирная штука, которая точно и больно кастит. Большая в своем эфирном виде и выглядит как пятно. Может маскироваться под человека(????) - реализовать позже.
+--create a Idea of Freedom pretender (id 3500).
 #newmonster 3500
 #name "Idea of Freedom"
 #descr "The Idea of Freedom is some sort of being, created by collective wishes and thoungs of people of Vazul. It exist in material reality as a projection of a normal priest. However, its just an illusian that cant make any harm. The Idea is very powerful spellcaster secretly enslaved people created it while they still thunks thats all ok."
@@ -74,7 +75,7 @@ nations 130-136 "
 --                 POINTS COST. Balance one, as new paths costs.
 #gcost 100
 
---                 Характеристики. Штука живучая, но эфирная (=дух), те бьёт очень плохо. Зато колдует хорошо и точно. Перемещается телепортируясь на небольшие расстояния, чем обусловлена большая скорость.
+--              
 #hp 100
 #str 5
 #att 10
@@ -135,10 +136,10 @@ nations 130-136 "
 --                     sprites and base stats from the Priest commander
 #copystats 240
 #copyspr 240
---                     Боевые священники - это священники, посвятившие свои жизни изучению искусства боя против еретиков и иных мерзостей. Они носят обычные робы из ткани, тем самым показывая, что вера защищает их лучше любой брони. Из оружия у них есть церемониальный нож и палка, которую они зачаруют во время специальных ритуалов во имя своего божества. Обучение подобного воина из священника занимает дополнительные 5 лет. И да будет их вера их острейшим клинком, ибо воины из них такие себе.
+--                    
 #name "Warpriest"
 #descr "The Warpriests are those priests, who layed their lives to learning path of fight with heretics and other abominations. They're wearing basic robes, proving, that their faith protects them better rather any armor. From weapons they use a ceremonial dagger, actually basic dagger, and a stick, that's being enchanted during special rituals in the name of the God. Education of such warrior from simple priest longs for additional 5 years. And will be the faith their best weapon, because warpriest isnt perfect warriors at all."
---                    Им необходим храм для тренировок, стоят они на 5 золота дороже обычного священника. Они немного сильнее обычного священника (на 1 атт). Магическое сопротивление на 1 больше обычного, мораль на 2.
+--                     
 #reqtemple
 #gcost 30
 #mr 14
@@ -441,7 +442,7 @@ Dominion: Boost to PD recruitment. New refugees are commonly arriving, so growth
 
 #end
 
---северные племенца                 _____________________________GOTH
+--               _____________________________GOTH
 --newnation
 #selectnation 131
 #name "Goth"
@@ -510,7 +511,7 @@ Dominion: Prefears turmoil +1, as well, as spreading it outside dominion"
 
 #end
 
---южные племенца                          __________________________BAMBA
+--                          __________________________BAMBA
 --newnation
 #selectnation 132
 #name "Bamba"
@@ -518,14 +519,14 @@ Dominion: Prefears turmoil +1, as well, as spreading it outside dominion"
 
 #era 1
 
+#descr "The lands of Bamba is very similar in many ways to its northern neighbour - Goth. However, main difference startes when the New God has emerged. The animal spirits of Bamba is a little bit more ancient that Goth's and way powerfull. The new God was afraid of that, because some of the Greates Spirits desided to confront with him. However, the power of the Great Lions and Jaguars wasnt enough to defeat him and the all of animal spirits were banished. People of Bamba found new faith, but the old ways are still strong. Subcounchiously they tried to find some of the last spirits. It was a great day, when some of the Toad Tribesman were encountered and started trading with Bambain population. The picture of a Toad or a Frog fastly stucked in mind of worshippers. Soon, the first Strange Frog hoard materialised in the lands... The new... Strange, and last spirit people found to worship."
+#brief "Bamba is a confederation of warious southern tribes, which some day worshipped animal spirits. But now, they are banished by the Ascending God, and a faith is replaced with a new one."
 #summary "Prefears +1 hot, and 1 turmoil
 Race: Human and toad tribesman
 Millitary: Actually no normal commanders. Light and normal infantry with shields. Amphibian light infantry
 Magic: Weak nature and water, with a small chances of additional weak paths of all other magics
 Priests: Weak, but works as mages as well
 Dominion: Spreads 1 turmoil"
-#descr "The lands of Bamba is very similar in many ways to its northern neighbour - Goth. However, main difference startes when the New God has emerged. The animal spirits of Bamba is a little bit more ancient that Goth's and way powerfull. The new God was afraid of that, because some of the Greates Spirits desided to confront with him. However, the power of the Great Lions and Jaguars wasnt enough to defeat him and the all of animal spirits were banished. People of Bamba found new faith, but the old ways are still strong. Subcounchiously they tried to find some of the last spirits. It was a great day, when some of the Toad Tribesman were encountered and started trading with Bambain population. The picture of a Toad or a Frog fastly stucked in mind of worshippers. Soon, the first Strange Frog hoard materialised in the lands... The new... Strange, and last spirit people found to worship."
-#brief "Bamba is a confederation of warious southern tribes, which some day worshipped animal spirits. But now, they are banished by the Ascending God, and a faith is replaced with a new one."
 
 #color 0 0 0
 #flag "indep_factions_data/indep_flag.tga"
@@ -573,7 +574,7 @@ Dominion: Spreads 1 turmoil"
 
 #end
 
---амазонцы                               ______________________________AMAZONIA
+--                              ______________________________AMAZONIA
 --newnation
 #selectnation 133
 #name "Amazonia"
@@ -637,7 +638,7 @@ Dominion: Can make blood sacrifices"
 
 #end
 
---Варвары и прочие нелюдимы                     ___________________________________LUXIA
+--                   ___________________________________LUXIA
 --newnation
 #selectnation 134
 #name "Luxia"
@@ -693,7 +694,7 @@ Dominion: Speads turmoil 2"
 #addgod 3510
 #end
 
---Динозаврусы                  __________________________________________SAUROPSIDA
+--                 __________________________________________SAUROPSIDA
 --newnation
 #selectnation 135
 #name "Sauropsida"
@@ -748,7 +749,7 @@ Priests: none, but sacred serpents can be found"
 
 #end
 
---Рыбы с ножками             _______________________________ICTTIYA
+--            _______________________________ICTTIYA
 --newnation
 #selectnation 136
 #name "Ichtiya"
@@ -809,7 +810,7 @@ Priests: Weak"
 --lets start from generic one for Indep nations. All of spells are going to lay around Divine path, because all have divines?
 
 --magic items=====================================================================MAGIC ITEMS
---пасхалка долобенная. должна чинить аффикшны
+
 #newitem
 #constlevel 0
 #mainpath 4
