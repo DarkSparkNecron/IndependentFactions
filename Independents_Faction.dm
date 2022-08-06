@@ -12,6 +12,7 @@
 #modname "Lands of the Independents (v0.02)"
 #description "This mod adds some nations created with generic units to represent independents. In current version the main new mechanic is CRINGE, because balance created with basic pasting generic units into nations is going into nowhere. 
 In this mod you can play stealthy, because you are very similar to independents in many ways. You can infiltrate, spam your units and spread chaos among the players. Due to the weak nature of units you can not only spam them, but create a overpowered pretender, as some sort of compensation.
+Activate vanilla nations remover for pure LotI game.
 ======
 Mod by Dark Spark. 2020-2022
 ======
